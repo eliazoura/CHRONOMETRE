@@ -1,3 +1,11 @@
+:root{
+
+
+
+   
+}
+
+
 body {
    margin: 0px 0px 0px 0px;
    box-sizing: border-box;
@@ -6,11 +14,10 @@ body {
    background-color: rgb(20, 12, 0);
    
    
-   background-color: antiquewhite;
-margin: 100px 0px 0px 0px;
+   margin: 100px 0px 0px 0px;
 
-   background-color: antiquewhite;
-margin: 100px 0px 0px 0px;
+   background-color: rgb(14, 8, 0);
+   margin: 100px 0px 0px 0px;
 
    /*corriger le margin top pour qu'il se cale automatiquement au centre de 'window' */
 
@@ -28,7 +35,7 @@ margin: 100px 0px 0px 0px;
 .box {
 
    display: grid;
-   grid-template-rows: 3fr 1fr;
+   grid-template-rows: 5fr 1fr;
 
 
 
@@ -55,6 +62,14 @@ margin: 100px 0px 0px 0px;
 
 }
 
+.act1:hover {
+
+   width: 80px;
+   background-color: rgb(26, 26, 26);
+   border-radius: 10px;
+
+}
+
 
 
 .act2 {
@@ -65,6 +80,13 @@ margin: 100px 0px 0px 0px;
 
 }
 
+.act2:hover {
+
+   width: 80px;
+   background-color: rgb(41, 25, 0);
+   border-radius: 10px;
+
+}
 
 
 .act3 {
@@ -75,18 +97,24 @@ margin: 100px 0px 0px 0px;
 
 }
 
+.act3:hover {
+   color: rgb(255, 255, 255);
+   width: 80px;
+   background-color: rgba(177, 77, 0, 0.905);
+   border-radius: 10px;
+
+}
+
 .lesbtn {
 
    display: grid;
-   align-items: center;
 
    grid-template-columns: 1fr 1fr 1fr;
-   column-gap: 30px;
+   column-gap: 50px;
 
-   width: 100%;
+   width: 90%;
 
 
-align-items: center;
 
 }
 
@@ -106,7 +134,6 @@ align-items: center;
 .centre {
 
 
-   margin-left: 100px;
-   margin-right: 100px;
+margin: auto;
 
 }
