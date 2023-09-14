@@ -1,98 +1,164 @@
-let resetEl = document.getElementById("reset");
-
-let stopEl = document.getElementById("stop");
-
-
-let startEl = document.getElementById("start");
+:root {}
 
 
 
-resetEl.addEventListener("click", reset);
-
-stopEl.addEventListener("click", stop);
-
-startEl.addEventListener("click", start);
-
-
-let hor = 0;
-console.log("🚀 ~ file: script.js:18 ~ hor:", hor)
-let min = 0;
-console.log("🚀 ~ file: script.js:20 ~ min:", min)
-let sec = 0;
-
-console.log("🚀 ~ file: script.js:19 ~ sec:", sec)
-console.log("🚀 ~ file: script.js:19 ~ min:", min)
-console.log("🚀 ~ file: script.js:19 ~ hor:", hor)
 
 
 
-function reset() {
-   console.log("ici REST")
-}
 
-function stop() {
-   console.log("ici STOP")
-   
-   return
-}
 
-function topChrono() {
-   console.log("ici START")
-   sec++;
-   console.log("🚀 ~ file: script.js:18 ~ hor:", hor)
-   console.log("🚀 ~ file: script.js:20 ~ min:", min)
-   console.log("🚀 ~ file: script.js:37 ~ start ~ sec:", sec)
-   if (sec == 60) {
-      min++;
-      sec=0;
-   }
 
-   if (min == 60) {
-      console.log("🚀 ~ file: script.js:44 ~ start ~ min:", min)
-      hor++;
-      min=0;
-      sec=0;
-   }
 
-   if (hor == 24 && min==59 && sec==59) {
-      hor=0;
-      min=0;
-      sec=0;
-   }
 
-   setTimeout(start,1000)
+body {
+   margin: 0px 0px 0px 0px;
+   box-sizing: border-box;
+   padding: 0%;
+
+   background-color: rgb(20, 12, 0);
+
+
+   margin: 100px 0px 0px 0px;
+
+   background-color: rgb(14, 8, 0);
+   margin: 100px 0px 0px 0px;
+
+   /*corriger le margin top pour qu'il se cale automatiquement au centre de 'window' */
+
 }
 
 
 
-
-//
-//switch (expression) {
-//   case valeur1:
-//     // Instructions à exécuter lorsque le résultat
-//     // de l'expression correspond à valeur1
-//     instructions1;
-//     [break;]
-//   case valeur2:
-//     // Instructions à exécuter lorsque le résultat
-//     // de l'expression correspond à valeur2
-//     instructions 2;
-//     [break;]
-//   …
-//   case valeurN:
-//     // Instructions à exécuter lorsque le résultat
-//     // de l'expression à valeurN
-//     instructionsN;
-//     [break;]
-//   [default:
-//     // Instructions à exécuter lorsqu'aucune des valeurs
-//     // ne correspond
-//     instructions_def;
-//     [break;]]
-// }
-// 
+.ensemble {
+   display: grid;
+   grid-template-rows: 3fr 2fr 3fr;
+}
 
 
-function topChrono(params) {
+
+.box {
+
+   display: grid;
+   grid-template-rows: 5fr 1fr;
+
+
+
+   background-color: rgb(150, 134, 113);
+
+   width: 80%;
+   height: 100px;
+   margin: auto;
+
+   text-align: center;
+   color: antiquewhite;
+
+   border-radius: 20px;
+
+}
+
+
+
+.act1 {
+
+   width: 80px;
+   background-color: rgb(68, 68, 68);
+   border-radius: 10px;
+
+}
+
+.act1:hover {
+
+   width: 80px;
+   background-color: rgb(26, 26, 26);
+   border-radius: 10px;
+
+}
+
+
+.pause {
+
+   width: 80px;
+   background-color: rgba(2, 1, 1, 0.718);
+   border-radius: 10px;
+
+}
+
+.pause:hover {
+   color: rgb(44, 25, 0) ;
+   width: 80px;
+   background-color: rgb(208, 208, 208);
+   border-radius: 10px;
+
+}
+
+
+
+.act2 {
+
+   width: 80px;
+   background-color: rgb(103, 62, 0);
+   border-radius: 10px;
+
+}
+
+.act2:hover {
+
+   width: 80px;
+   background-color: rgb(41, 25, 0);
+   border-radius: 10px;
+
+}
+
+
+.act3 {
+   color: rgb(255, 255, 255);
+   width: 80px;
+   background-color: rgba(255, 153, 0, 0.694);
+   border-radius: 10px;
+
+}
+
+.act3:hover {
+   color: rgb(255, 255, 255);
+   width: 80px;
+   background-color: rgba(177, 77, 0, 0.905);
+   border-radius: 10px;
+
+}
+
+.lesbtn {
+
+   display: grid;
+
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 50px;
+
+   width: 90%;
+
+   padding-bottom: 15px;
+
+}
+
+
+
+.time {
+   /*font-family: 'Courier New', Courier, monospace;*/
+
+   font-family: 'Open Sans', sans-serif;
+
+   font-family: 'Share Tech Mono', monospace;
+
+   font-size: xx-large;
+   background-color: rgb(68, 68, 68);
+   border-radius: 20px;
+   height: 70%;
+   box-shadow: 0px 5px 5px rgb(20, 12, 0);
+}
+
+
+
+.centre {
+
+   margin: auto;
 
 }
